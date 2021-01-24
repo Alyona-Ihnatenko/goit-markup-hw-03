@@ -10,13 +10,51 @@
   --our-tem-color: #f5f4fa;
   --background-color: #ffffff;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--background-color);
   font-family: var(--text-font);
   font-style: normal;
+  box-sizing: border-box;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 /*==========Logotype========*/
 .logo-link {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -36,7 +74,37 @@ body {
 .logo-link-light-theme {
   color: #000000;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.tel-link,
+.mail-link:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation {
+  display: flex;
+}
+
 /*==========end logotype==========*/
+/*HEader*/
+.header {
+  background-color: teal;
+}
 .link {
   text-decoration-line: none;
 }
@@ -57,6 +125,11 @@ body {
 
   color: var(--title-color) 1;
 }
+.navigation-list-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus {
   color: var(--link-color);
@@ -66,6 +139,9 @@ body {
 }
 .tel-link,
 .mail-link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 14px;
@@ -106,8 +182,13 @@ body {
 /*==============End footer==========*/
 
 /*=============Hero Index===========*/
-
+.hero .container {
+  display: flex;
+  justify-content: center;
+}
 .hero-title {
+  width: 696px;
+  margin-bottom: 30px;
   font-family: var(--text-font);
   font-weight: 900;
   font-size: 44px;
@@ -120,7 +201,14 @@ body {
 .hero {
   background-color: var(--header-footer-color);
 }
+.hero-above-side {
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
 .hero-btn {
+  padding: 10px 32px;
+  width: 200px;
   font-family: var(--text-font);
   font-weight: 700;
   font-size: 16px;
