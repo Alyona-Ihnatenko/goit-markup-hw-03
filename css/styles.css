@@ -48,7 +48,17 @@ img {
 .link {
   text-decoration: none;
 }
-
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+}
+.header .container {
+  display: flex;
+}
 /*==========Logotype========*/
 .logo-link {
   display: flex;
@@ -74,14 +84,7 @@ img {
 .logo-link-light-theme {
   color: #000000;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-}
+
 .navigation-list {
   display: flex;
 }
@@ -166,9 +169,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-address > .logo-link {
-  margin-top: 20px;
-}
+
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -281,7 +282,9 @@ img {
 /*=============End Hero Index=============*/
 
 /*==============About-us,Our-team==========*/
-
+.about-us .container {
+  display: flex;
+}
 .about-us-title,
 .our-team-title {
   font-family: Roboto;
@@ -299,7 +302,7 @@ img {
   display: flex;
   justify-content: center;
   min-width: 376px;
-  padding-bottom: 50pt;
+  margin-bottom: 50px;
 }
 .about-us-list {
   display: flex;
@@ -308,6 +311,9 @@ img {
 .about-us-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.our-team-img-descr {
+  padding: 30px 32px;
 }
 .about-us-list-item:nth-child(3n) {
   margin-right: 0;
@@ -383,14 +389,20 @@ img {
 .buttons-list-item {
   display: flex;
 }
+.buttons-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .buttons-list-item-btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto;*/
   padding: 6.1px 22.5px;
+  border-color: #f5f4fa;
 }
-.buttons-list-item-btn:not(:last-child) {
-  margin-right: 8.21px;
+.buttons-list-item: {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .buttons-list-item-btn {
   text-align: center;
@@ -405,9 +417,6 @@ img {
 .buttons-list-item-btn:focus {
   color: var(--text-color-accent);
   background-color: var(--link-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /*==========End Button======*/
