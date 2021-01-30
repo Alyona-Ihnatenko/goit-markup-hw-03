@@ -126,7 +126,7 @@ img {
 
   color: var(--title-color) 1;
 }
-.navigation-list-item-link {
+.navigation-list-item {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -138,11 +138,13 @@ img {
 .current {
   color: var(--link-color);
 }
+.auth-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .tel-link,
 .mail-link {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 14px;
@@ -453,10 +455,17 @@ img {
 .projects .container {
   display: flex;
 }
+.projects {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
+
 .projects-img-text {
   padding: 20px 24px;
 }
@@ -468,7 +477,8 @@ img {
 }
 .projects-list-item {
   margin-right: 30px;
-  margin-bottom: 30.5px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3-30);
 }
 
 /*===========End Projects===========*/
